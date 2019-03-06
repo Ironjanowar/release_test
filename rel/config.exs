@@ -22,12 +22,6 @@ use Mix.Releases.Config,
 # and environment configuration is called a profile
 
 environment :dev do
-  set(dev_mode: true)
-  set(include_erts: false)
-  set(cookie: :"Y(b&y~yPyqHR)wTwdP{^r~_do`|su0zX>uj6Xp?@6plnBak|H5G;^!lqtGFi!D_@")
-end
-
-environment :pre do
   # If you are running Phoenix, you should make sure that
   # server: true is set and the code reloader is disabled,
   # even in dev mode.
@@ -36,13 +30,13 @@ environment :pre do
   # dev mode.
   set(dev_mode: true)
   set(include_erts: false)
-  set(cookie: :"Y(b&y~yPyqHR)wTwdP{^r~_do`|su0zX>uj6Xp?@6plnBak|H5G;^!lqtGFi!D_@")
+  set(cookie: :"z8{wIuEDn[N?WrWDXR=M^);)JzqArhg&I]@z.:?qRD|ml_dayPvmnC^Hyo;g)b&X")
 end
 
 environment :prod do
   set(include_erts: true)
   set(include_src: false)
-  set(cookie: :"XxF/aI!)p8w={lo8$[mRtL!7Mue;kTyPF!;juwd=BjxC?Mw@G`^F)hCD6<qrKVt$")
+  set(cookie: :"D>qE{}ADrLE]kSx9G3Q_d;QfAepb^d$*Zl>`7FF&sYQVks:nKb7ErdkuJr@ZNfP?")
   set(vm_args: "rel/vm.args")
 end
 

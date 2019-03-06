@@ -6,16 +6,9 @@ defmodule ReleaseTest.Application do
   use Application
 
   def start(_type, _args) do
-    ExGram.send_message(
-      14_977_303,
-      "Started ReleaseTest on #{Mix.env()} environment",
-      token: "376323488:AAG6nrWYOt4GXIJi8o1qB5BiRTdrx9tQSwo"
-    )
-
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: ReleaseTest.Worker.start_link(arg)
-      # {ReleaseTest.Worker, arg},
+      ReleaseTest
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
