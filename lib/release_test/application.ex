@@ -6,9 +6,11 @@ defmodule ReleaseTest.Application do
   use Application
 
   def start(_type, _args) do
+    env = Application.get_env(:release_test, :environment)
+
     # List all child processes to be supervised
     children = [
-      ReleaseTest
+      {ReleaseTest, env}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

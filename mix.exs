@@ -23,7 +23,7 @@ defmodule ReleaseTest.MixProject do
   defp deps do
     [
       {:ex_gram, "~> 0.5.0"},
-      {:distillery, "~> 2.0"}
+      {:distillery, "~> 2.0", runtime: false}
     ]
   end
 end
